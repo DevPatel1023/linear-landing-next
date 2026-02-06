@@ -1,5 +1,6 @@
 "use client";
 
+import { AIProductSectionContent } from "./AIProductSectionContent";
 import { LayeredStack } from "./LayeredStack";
 import { Button } from "./ui/button";
 
@@ -35,6 +36,9 @@ export function AIProductSection() {
 
         {/* image type */}
         <LayeredStack />
+
+        {/* cards content */}
+        <AIProductSectionContent />
       </div>
     </section>
   );
