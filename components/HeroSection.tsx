@@ -7,13 +7,12 @@ import { motion } from "framer-motion";
 export function HeroSection() {
   // Container animation - staggers children
   
-
   // Word-by-word animation for the heading
   const headingText = "Linear is a purpose-built tool for planning and building products";
   const words = headingText.split(" ");
 
   return (
-    <section className="relative min-h-screen overflow-hidden pt-30">
+    <section className="relative min-h-screen overflow-hidden pt-30 container mx-auto px-4">
       <div className="grid grid-cols-12 gap-8 items-center">
         <motion.div
           className="col-span-12"

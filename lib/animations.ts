@@ -1,3 +1,4 @@
+import { cubicBezier } from "framer-motion";
 
 export const containerVariants = {
     hidden: { opacity: 0 },
@@ -23,7 +24,7 @@ export const textRevealVariants = {
       filter: "blur(0px)",
       transition: {
         duration: 0.8,
-        ease: [0.22, 1, 0.36, 1],
+        ease: cubicBezier(0.22, 1, 0.36, 1),
         filter: {
           duration: 0.8,
         }
