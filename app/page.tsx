@@ -3,6 +3,7 @@ import { CTA } from "@/components/CTASection";
 import { CustomerSection } from "@/components/CustomerSection";
 import { HeroSection } from "@/components/HeroSection";
 import { ProjectPlan } from "@/components/ProjectPlan";
+import { TrackingSection } from "@/components/TrackingSection";
 import { WhatMakesLinearDifferent } from "@/components/WhatMakesLinearDifferent";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <WhatMakesLinearDifferent />
         <AIProductSection />
         <ProjectPlan />
+        <TrackingSection />
         <CTA />
       </main>
     </div>

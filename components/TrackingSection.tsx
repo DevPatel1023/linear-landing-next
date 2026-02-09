@@ -1,17 +1,18 @@
-import { PlanningHeroImageWrapper } from "./PlanningHeroImageWrapper";
-import { ProjectPlanCards } from "./ProjectPlanCards";
+" use client";
 
-export function ProjectPlan() {
+import { Button } from "./ui/button";
+
+export function TrackingSection() {
   return (
-    <section className="relative py-25 bg-linear-to-b from-white/10 to-black">
-      <div className="container mx-auto px-4">
+    <section className="py-16 md:py-30 space-y-10 container mx-auto px-4">
+      <div className="mx-auto max-w-6xl space-y-10">
         {/* text */}
         <div className="inline-flex items-center gap-2">
           {/* blue indicator */}
-          <span className="h-2.5 w-4 rounded-full bg-green-400" />
+          <span className="h-2.5 w-4 rounded-full bg-yellow-400" />
 
           <span className="text-[#D0D6E0] text-sm cursor-pointer inline-flex items-center gap-1 hover:gap-2 transition-all duration-200">
-            Project and long-term planning{"  "}
+            Task tracking and sprint planning{"  "}
             <span className="inline-block transition-transform duration-200">
               {">"}
             </span>
@@ -21,22 +22,22 @@ export function ProjectPlan() {
         {/* heading text + subheading text */}
         <div className="space-y-5">
           <h1 className="py-4 pb-5 text-5xl font-medium">
-            AI-assisted product development
+            Issue tracking you'll enjoy using
           </h1>
           <p className="max-w-md text-white/60 leading-relaxed w-fit font-medium text-lg">
             <span className="text-white font-medium">
-              Align your team around a unified product timeline.{" "}
+              Optimized for speed and efficiency.
             </span>
-            Plan, manage, and track all product initiatives with Linear’s visual
-            planning tools.
+            Create tasks in seconds, discuss issues in context, and breeze
+            through your work in views tailored to you and your team.
           </p>
+          <Button
+            variant="ghost"
+            className="bg-white/10 hover:bg-white/20 transition-colors duration-200 cursor-pointer px-5"
+          >
+            Learn more {">"}{" "}
+          </Button>
         </div>
-
-      {/* hero image wrapper */}
-      <PlanningHeroImageWrapper />
-
-      {/* cards */}
-      <ProjectPlanCards />
       </div>
     </section>
   );
