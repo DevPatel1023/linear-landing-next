@@ -1,6 +1,9 @@
 " use client";
 
+import Image from "next/image";
+import { TracingSecCard } from "./TrackingSecCard";
 import { Button } from "./ui/button";
+
 
 export function TrackingSection() {
   return (
@@ -31,13 +34,24 @@ export function TrackingSection() {
             Create tasks in seconds, discuss issues in context, and breeze
             through your work in views tailored to you and your team.
           </p>
-          <Button
-            variant="ghost"
-            className="bg-white/10 hover:bg-white/20 transition-colors duration-200 cursor-pointer px-5"
-          >
-            Learn more {">"}{" "}
-          </Button>
+          <Image src="/TrackingHeroImg.webp" alt="tracing-hero-img" height={1620} width={3200}/>
         </div>
+      </div>
+
+      {/* cards */}
+      <TracingSecCard />
+
+      {/* text */}
+      <div className="grid grid-rows-1 space-y-2">
+      <h1 className="text-2xl font-medium text-white">
+        Linear Insights
+      </h1>
+      <p className="text-xl text-white/40">
+        Take the guesswork out of product planning with realtime analytics and reporting dashboards.
+      </p>
+      <div>
+      <Button variant="ghost" size="lg">Learn more {" "} {">"}</Button>
+      </div>
       </div>
     </section>
   );
