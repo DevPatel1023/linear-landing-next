@@ -78,9 +78,9 @@ export function FannedDeckCard() {
                 className="
                   w-[320px]
                   rounded-xl p-4
-                  bg-white/[0.06]
+                  bg-white/6
                   backdrop-blur-xl
-                  border border-white/[0.08]
+                  border border-white/8
                   shadow-[0_30px_80px_rgba(0,0,0,0.7)]
                 "
                 style={{ backfaceVisibility: "hidden" }}

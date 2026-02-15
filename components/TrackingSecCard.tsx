@@ -133,7 +133,7 @@ export function TracingSecCard() {
 
                     <div className="flex items-center gap-2">
                       {/* Avatar */}
-                      <Avatar className="w-8 h-8 flex-shrink-0">
+                      <Avatar className="w-8 h-8 shrink-0">
                         {issue.user.src ? (
                           <AvatarImage
                             src={issue.user.src}
@@ -145,7 +145,7 @@ export function TracingSecCard() {
                           </AvatarFallback>
                         )}
                       </Avatar>
-                      <span className="text-white/50 text-sm flex-shrink-0">
+                      <span className="text-white/50 text-sm shrink-0">
                         {issue.user.name}
                       </span>
                     </div>
@@ -153,81 +153,35 @@ export function TracingSecCard() {
 
                   {/* Dropdown Menu */}
                   {openMenuId === issue.id && index === 0 && (
-                    <div className="absolute left-12 top-10 w-64 bg-[#1a1a1a] border border-white/10 rounded-lg overflow-hidden shadow-2xl z-10">
+                    <div className="absolute left-12 top-10 w-64 bg-[#333131] border border-white/20 rounded-lg overflow-hidden shadow-2xl z-10">
                       <button
-                        className="w-full flex items-center gap-3 px-4 py-3 text-white/90 hover:bg-white/5 transition-colors text-left"
+                        className="w-full flex items-center gap-3 px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 transition-colors text-left"
                         onClick={() => setOpenMenuId(null)}
                       >
-                        <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          className="flex-shrink-0"
-                        >
-                          <path
-                            d="M9 2L9 16M16 9L2 9"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                          />
-                        </svg>
+                        <img
+                          src="/Accept.svg"
+                          alt="Accept-img"
+                          width={16}
+                          height={16}
+                          className="text-gray-400 hover:text-white transition-colors"
+                        />
+
                         <span className="text-base">Accept</span>
                       </button>
 
                       <button
-                        className="w-full flex items-center gap-3 px-4 py-3 text-white/90 hover:bg-white/5 transition-colors text-left"
+                        className="w-full flex items-center gap-3 px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 transition-colors text-left"
                         onClick={() => setOpenMenuId(null)}
                       >
-                        <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          className="flex-shrink-0"
-                        >
-                          <rect
-                            x="3"
-                            y="3"
-                            width="12"
-                            height="12"
-                            rx="2"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            fill="none"
-                          />
-                          <rect
-                            x="6"
-                            y="6"
-                            width="6"
-                            height="6"
-                            rx="1"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            fill="none"
-                          />
-                        </svg>
+                        <img src="/Copy.svg" alt="Copy-img" height={16} width={16} className="text-gray-400 hover:text-white transition-colors" />
                         <span className="text-base">Mark as duplicate</span>
                       </button>
 
                       <button
-                        className="w-full flex items-center gap-3 px-4 py-3 text-white/90 hover:bg-white/5 transition-colors text-left"
+                        className="w-full flex items-center gap-3 px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 transition-colors text-left"
                         onClick={() => setOpenMenuId(null)}
                       >
-                        <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          className="flex-shrink-0"
-                        >
-                          <path
-                            d="M4 4L14 14M14 4L4 14"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                          />
-                        </svg>
+                        <img src="/Decline.svg" alt="Decline-img" height={16} width={16} className="text-gray-400 hover:text-white transition-colors" />
                         <span className="text-base">Decline</span>
                       </button>
                     </div>

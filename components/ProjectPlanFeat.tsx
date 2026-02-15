@@ -85,7 +85,7 @@ export function ProjectPlanFeat() {
     <section className="w-full py-24">
       <div className="flex flex-col lg:flex-row gap-16 items-start">
         {/* Left navigation */}
-        <div className="w-full lg:w-[420px] space-y-10">
+        <div className="w-full lg:w-105 space-y-10">
           <h1 className="text-2xl font-semibold text-white leading-tight">
             Ideate and specify
             <br className="block md:hidden" />
@@ -117,7 +117,7 @@ export function ProjectPlanFeat() {
         {/* Right mockup */}
         <div className="bg-black p-2 rounded-md border border-white/10">
           <div className="w-full lg:flex-1">
-            <div className="relative min-h-[560px] rounded-md bg-gradient-to-b from-[#0f1115] to-[#0a0b0e] border border-white/10 overflow-hidden">
+            <div className="relative min-h-140 rounded-md bg-linear-to-b from-[#0f1115] to-[#0a0b0e] border border-white/10 overflow-hidden">
               {/* Browser chrome */}
               <div className="flex items-center gap-3 px-6 py-3 border-b border-white/10">
                 <div className="w-3 h-3 rounded-sm bg-white/40" />

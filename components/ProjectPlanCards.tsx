@@ -1,15 +1,21 @@
-import Image from "next/image";
+"use client"
+
 import { AIProductSecTag } from "./AIProductSecTag";
 import { Avatar, AvatarFallback, AvatarGroup, AvatarImage } from "./ui/avatar";
 import { FannedDeckCard } from "./FannedDeckCard";
 import { ProjectPlanFeat } from "./ProjectPlanFeat";
 import { ProjectSpecifixFeat } from "./ProjectSpecifixFeat";
+import { cardDataType } from "@/app/types/cardDataType";
 
-export function ProjectPlanCards() {
+type projectPlanCardsProps = {
+  data : cardDataType[]
+}
+
+export function ProjectPlanCards({data} : projectPlanCardsProps) {
   return (
     <div className="w-full py-25 space-y-10">
       {/* Top Grid - Two Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full items-stretch">
         {/* card 1 */}
         <div className="border-t-2 border-b-2 border-white/10 md:border-r md:border-white/10 p-5 h-full">
           {/* text */}
@@ -117,7 +123,7 @@ export function ProjectPlanCards() {
 
       {/* cards */}
       <div>
-        <ProjectSpecifixFeat />
+        <ProjectSpecifixFeat data={data} />
       </div>
     </div>
   );

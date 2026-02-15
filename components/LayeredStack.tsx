@@ -60,15 +60,15 @@ export function LayeredStack() {
             transform: "rotateX(25deg)",
           }}
         >
-          <div className="bg-[#212223] w-full max-w-[600px] sm:max-w-[650px] md:max-w-[750px] lg:max-w-[850px] h-15 rounded-t-lg flex items-center px-3">
+          <div className="bg-[#212223] w-full max-w-150 sm:max-w-162.5 md:max-w-187.5 lg:max-w-212.5 h-15 rounded-t-lg flex items-center px-3">
             {/* fake blinking caret */}
-            <span className="ml-1 w-[1px] h-5 bg-cyan-400 animate-blink" />
+            <span className="ml-1 w-px h-5 bg-cyan-400 animate-blink" />
             <span className="text-white/40 text-sm sm:text-md">Assign to…</span>
           </div>
 
           {/* TOP CARD - Selected, +10px wider */}
           <div
-            className="w-full max-w-[630px] sm:max-w-[680px] md:max-w-[780px] lg:max-w-[880px] h-15 rounded-lg flex items-center border border-white/30 py-8"
+            className="w-full max-w-157.5 sm:max-w-170 md:max-w-195 lg:max-w-220 h-15 rounded-lg flex items-center border border-white/30 py-8"
             style={{
               backgroundColor: top.color,
               marginTop: "-5px",

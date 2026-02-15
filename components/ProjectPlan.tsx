@@ -1,5 +1,30 @@
+import { cardDataType } from "@/app/types/cardDataType";
 import { PlanningHeroImageWrapper } from "./PlanningHeroImageWrapper";
 import { ProjectPlanCards } from "./ProjectPlanCards";
+
+const cardData: cardDataType[] = [
+    {   
+        src: "Initiatives.svg",
+        title : "Initiatives",
+        p : "Coordinate strategic product efforts."
+    },
+    {   
+        src: "CrossTeam.svg",
+        title : "Cross-team projects",
+        p : "Collaborate across teams and departments"
+    },
+    {   
+        src: "Milestone.svg",
+        title : "Milestones",
+        p : "Break projects down into concrete phases."
+    },
+    {   
+        src: "Progress.svg",
+        title : "Progress insights",
+        p : "Track scope, velocity, and progress over time."
+    },
+];
+
 
 export function ProjectPlan() {
   return (
@@ -36,7 +61,7 @@ export function ProjectPlan() {
       <PlanningHeroImageWrapper />
 
       {/* cards */}
-      <ProjectPlanCards />
+      <ProjectPlanCards data={cardData} />
       </div>
     </section>
   );

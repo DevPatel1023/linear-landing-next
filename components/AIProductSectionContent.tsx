@@ -27,7 +27,7 @@ export function AIProductSectionContent() {
           <div className="flex justify-start gap-3 items-center space-x-2">
             <p className="text-sm font-medium text-[#727272] w-20">Suggestions</p>
             <AIProductSecTag text="nan" img="/avtarimg.avif" style="border-dashed border rounded-sm" />
-            <AIProductSecTag text="Mobile App Refactor" img="/phone.svg" style="border-dashed border rounded-sm " />
+            <AIProductSecTag text="Mobile App Refactor" img="/Phone.svg" style="border-dashed border rounded-sm " />
             <AIProductSecTag text="Slack" img="/slackdot.svg" style="border-dashed border rounded-sm" />
           </div>
 

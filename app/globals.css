@@ -143,8 +143,6 @@
   scrollbar-width: none;
 }
 
-/* Add to your global.css */
-
 /* Blinking cursor animation */
 @keyframes blink {
   0%, 49% {

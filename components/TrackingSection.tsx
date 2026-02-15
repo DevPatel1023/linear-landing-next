@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { TracingSecCard } from "./TrackingSecCard";
 import { Button } from "./ui/button";
+import { LinearInsights } from "./LinearInsights";
 
 
 export function TrackingSection() {
@@ -41,18 +42,8 @@ export function TrackingSection() {
       {/* cards */}
       <TracingSecCard />
 
-      {/* text */}
-      <div className="grid grid-rows-1 space-y-2">
-      <h1 className="text-2xl font-medium text-white">
-        Linear Insights
-      </h1>
-      <p className="text-xl text-white/40">
-        Take the guesswork out of product planning with realtime analytics and reporting dashboards.
-      </p>
-      <div>
-      <Button variant="ghost" size="lg">Learn more {" "} {">"}</Button>
-      </div>
-      </div>
+      {/* Linear Insights part */}
+      <LinearInsights />
     </section>
   );
 }
