@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { TracingSecCard } from "./TrackingSecCard";
-import { Button } from "./ui/button";
 import { LinearInsights } from "./LinearInsights";
 
 

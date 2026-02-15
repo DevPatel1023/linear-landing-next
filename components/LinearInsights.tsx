@@ -6,22 +6,22 @@ import { ProjectSpecifixFeat } from "./ProjectSpecifixFeat";
 
 const data: cardDataType[] = [
     {
-        src: "Workflows.svg",
+        src: "/Workflows.svg",
         title: "Tailored workflows",
         p: "Track progress across custom issue flows for your team."
     },
     {
-        src: "Views.svg",
+        src: "/Views.svg",
         title: "Custom views",
         p: "Switch between list and board. Group issues with swimlanes."
     },
     {
-        src: "Filters.svg",
+        src: "/Filters.svg",
         title: "Filters",
         p: "Refine issue lists down to what’s most relevant to you."
     },
     {
-        src: "SLA.svg",
+        src: "/SLA.svg",
         title: "SLAs",
         p: "Automatically apply deadlines to time-sensitive tasks."
     },

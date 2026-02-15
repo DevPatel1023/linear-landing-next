@@ -16,7 +16,7 @@ export function ProjectSpecifixFeat({ data }: cardDataProps) {
                             alt={c.title}
                             width={16}
                             height={16}
-                            className="text-white"
+                            className="brightness-0 invert"
                         />
 
                         <h1 className="text-white">{c.title}</h1>
