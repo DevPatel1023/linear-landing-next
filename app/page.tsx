@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { ProjectPlan } from "@/components/ProjectPlan";
 import { TrackingSection } from "@/components/TrackingSection";
 import { WhatMakesLinearDifferent } from "@/components/WhatMakesLinearDifferent";
+import { Workflows } from "@/components/Workflows";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <AIProductSection />
         <ProjectPlan />
         <TrackingSection />
+        <Workflows />
         <CTA />
       </main>
     </div>

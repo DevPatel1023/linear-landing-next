@@ -44,10 +44,8 @@ export function LinearInsights() {
             <Image src="/LinearInsightsHeroImg.svg" alt="LinearInsightsHeroImg" width={3200} height={1620} />
 
             {/* cards */}
-            <div>
-
+            <div className="mt-5">
                 <ProjectSpecifixFeat data={data} />
-
             </div>
         </div>
     )
