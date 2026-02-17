@@ -45,7 +45,7 @@ export function LinearInsights() {
 
             {/* cards */}
             <div className="mt-5">
-                <ProjectSpecifixFeat data={data} />
+                <ProjectSpecifixFeat data={data} style="brightness-0 invert" />
             </div>
         </div>
     )

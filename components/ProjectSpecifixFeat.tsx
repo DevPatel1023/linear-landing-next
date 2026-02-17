@@ -2,12 +2,13 @@
 import { cardDataType } from "@/app/types/cardDataType"
 
 type cardDataProps = {
-    data: cardDataType[]
+    data: cardDataType[],
+    style?: string
 }
 
-export function ProjectSpecifixFeat({ data }: cardDataProps) {
+export function ProjectSpecifixFeat({ data,style }: cardDataProps) {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4">
             {
                 data.map((c, i) => (
                     <div key={i} className="space-y-3 m-2 text-sm">
@@ -16,7 +17,7 @@ export function ProjectSpecifixFeat({ data }: cardDataProps) {
                             alt={c.title}
                             width={16}
                             height={16}
-                            className="brightness-0 invert"
+                            className={`${style}`}
                         />
 
                         <h1 className="text-white">{c.title}</h1>
