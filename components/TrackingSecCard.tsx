@@ -163,7 +163,7 @@ export function TracingSecCard() {
                           alt="Accept-img"
                           width={16}
                           height={16}
-                          className="text-gray-400 hover:text-white transition-colors"
+                          className="brightness-0 invert hover:text-white transition-colors"
                         />
 
                         <span className="text-base">Accept</span>
@@ -173,7 +173,7 @@ export function TracingSecCard() {
                         className="w-full flex items-center gap-3 px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 transition-colors text-left"
                         onClick={() => setOpenMenuId(null)}
                       >
-                        <img src="/Copy.svg" alt="Copy-img" height={16} width={16} className="text-gray-400 hover:text-white transition-colors" />
+                        <img src="/Copy.svg" alt="Copy-img" height={16} width={16} className="brightness-0 invert hover:text-white transition-colors" />
                         <span className="text-base">Mark as duplicate</span>
                       </button>
 
@@ -181,7 +181,7 @@ export function TracingSecCard() {
                         className="w-full flex items-center gap-3 px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 transition-colors text-left"
                         onClick={() => setOpenMenuId(null)}
                       >
-                        <img src="/Decline.svg" alt="Decline-img" height={16} width={16} className="text-gray-400 hover:text-white transition-colors" />
+                        <img src="/Decline.svg" alt="Decline-img" height={16} width={16} className="brightness-0 invert hover:text-white transition-colors" />
                         <span className="text-base">Decline</span>
                       </button>
                     </div>
