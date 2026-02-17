@@ -1,4 +1,5 @@
 import { cubicBezier } from "framer-motion";
+import type { Variants } from 'framer-motion'
 
 export const containerVariants = {
     hidden: { opacity: 0 },
@@ -74,3 +75,43 @@ export const imageStackItem = {
     },
   },
 };
+
+
+export const illustrate: Variants = {
+  initial: {
+    opacity: 0,
+    y: 8,
+    filter: 'blur(4px)',
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    filter: 'blur(0px)',
+  },
+}
+
+export const blurPopUp: Variants = {
+  initial: {
+    opacity: 0,
+    y: 12,
+    filter: 'blur(6px)',
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    filter: 'blur(0px)',
+  },
+}
+
+export const blurPopUpWord: Variants = {
+  initial: {
+    opacity: 0,
+    y: 16,
+    filter: 'blur(8px)',
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    filter: 'blur(0px)',
+  },
+}
