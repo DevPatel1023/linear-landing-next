@@ -15,7 +15,7 @@ export function ProjectPlanCards({data} : projectPlanCardsProps) {
   return (
     <div className="w-full py-25 space-y-10">
       {/* Top Grid - Two Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full items-stretch">
         {/* card 1 */}
         <div className="border-t-2 border-b-2 border-white/10 md:border-r md:border-white/10 p-5 h-full">
           {/* text */}
@@ -34,7 +34,7 @@ export function ProjectPlanCards({data} : projectPlanCardsProps) {
             <div className="bg-[#0e0f11] space-y-3 p-4 rounded-md border-2 border-white/20">
               <h1 className="text-xl text-white">Project Overview</h1>
 
-              <div className="flex justify-start gap-3 items-center space-x-2">
+              <div className="flex justify-start gap-3 items-center flex-wrap">
                 <p className="text-sm font-medium text-[#727272] w-20">
                   Properties
                 </p>
@@ -60,7 +60,7 @@ export function ProjectPlanCards({data} : projectPlanCardsProps) {
                 </AvatarGroup>
               </div>
 
-              <div className="flex justify-start gap-3 items-center space-x-2">
+              <div className="flex justify-start gap-3 items-center flex-wrap">
                 <p className="text-sm font-medium text-[#727272] w-20">
                   Resources
                 </p>
