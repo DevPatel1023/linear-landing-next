@@ -90,17 +90,19 @@ export function FoundationSection() {
             </div>
           </div>
 
-          {/* img */}
-          <div className="-mr-[15vw] border-dashed border-white/20 p-5">
-            <Image
-              src="/Foundation.svg"
-              alt="Foundation illustration"
-              width={3200}
-              height={1000}
-              priority
-              className="w-[140%] h-auto"
-            />
-          </div>
+ <div className="relative overflow-hidden">
+  <div className="-mr-[15vw] border-dashed border-white/20 p-5">
+    <Image
+      src="/Foundation.svg"
+      alt="Foundation illustration"
+      width={3200}
+      height={1000}
+      priority
+      className="w-[140%] h-auto"
+    />
+  </div>
+</div>
+
 
           <div className="mt-5 space-y-5">
             {/* seprate line */}
