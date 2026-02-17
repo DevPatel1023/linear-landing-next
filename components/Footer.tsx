@@ -8,7 +8,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         
         {/* grid wrapper */}
-        <div className="grid grid-cols-6 gap-6 text-sm pb-15">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-sm pb-15">
           
           {/* logo column */}
           <div>
