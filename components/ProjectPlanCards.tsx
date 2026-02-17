@@ -117,7 +117,7 @@ export function ProjectPlanCards({data} : projectPlanCardsProps) {
       </div>
 
       {/* ProjectPlanFeat */}
-      <div className="w-full border-t-2 border-b-2 border-white/10 p-5 lg:p-10">
+      <div className="w-full p-5 lg:p-10">
         <ProjectPlanFeat />
       </div>
 

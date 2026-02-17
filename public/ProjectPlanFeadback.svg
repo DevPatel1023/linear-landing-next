@@ -1,10 +1,1 @@
-<svg
-  width="22"
-  height="22"
-  viewBox="0 0 16 16"
-  xmlns="http://www.w3.org/2000/svg"
-  aria-hidden="true"
-  fill="#68CC58"
->
-  <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h7A2.5 2.5 0 0 1 14 2.5v5A2.5 2.5 0 0 1 11.5 10H6.8L3.2 13.6A.5.5 0 0 1 2 13.25V10A2.5 2.5 0 0 1 0 7.5v-5Z"/>
-</svg>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" aria-hidden="true" viewBox="0 0 16 16" style="--icon-color: currentColor;"><path d="M1.054 4.896C1 5.246 1 5.664 1 6.5s0 1.254.054 1.604a4.6 4.6 0 0 0 3.277 3.718l-.327 2.616a.5.5 0 0 0 .85.416L7.707 12H9.5c.836 0 1.254 0 1.604-.054a4.6 4.6 0 0 0 3.842-3.842C15 7.754 15 7.336 15 6.5s0-1.254-.054-1.604a4.6 4.6 0 0 0-3.842-3.842C10.754 1 10.336 1 9.5 1h-3c-.836 0-1.254 0-1.604.054a4.6 4.6 0 0 0-3.842 3.842" fill="#68CC58"></path></svg>
